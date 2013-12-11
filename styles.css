@@ -28,6 +28,10 @@ header {
 	margin-top: 15px;
 }
 
+a, a:hover, a:visited, a:visited:hover {border: none; text-decoration: none;}
+a {color: #333;}
+a:hover {text-decoration: underline;}
+
 #schedule {
 	width: 90%;
 	margin: 45px auto 0;
