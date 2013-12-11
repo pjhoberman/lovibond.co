@@ -137,8 +137,6 @@ header {
 		height: 180px;
 	}
 	.event {float: left;}
-	.buy {display: block;}
-	.buy-now-text, .buy-now-text.on-sale {display: none;}
 }
 
 /*768-899*/
@@ -151,6 +149,7 @@ header {
 		background-image: url('images/header-768.png');
 		height: 210px;
 	}
+
 }
 
 /*900-1199px*/
@@ -178,6 +177,8 @@ header {
 		width: 100%;
 		margin: 0 auto 15px;
 	}
+	.buy {display: block;}
+	.buy-now-text, .buy-now-text.on-sale {display: none;}
 }
 
 /* Full width - 1200+ */
