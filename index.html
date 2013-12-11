@@ -1,14 +1,18 @@
 <!-- 
 	Todo
 		* Responsive
+			* bg at mobile?
+			* Test with all buy tix buttons
 		* Logos
-		* Update Buy Tixs
+		* Update Buy Tixs to Buy Tix
+		* Holding area for not on sale yet?
  -->
 <html>
 <head>
 	<title>Lovibond.co - A Series of Fortunate Events</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
 <body>
 	<header>
 	</header>
@@ -16,10 +20,6 @@
 	<div id="schedule">
 		<img src="images/schedule-header.png" style="margin-bottom: 30px;"/>
 
-		<div id="logos">
-			<a href="http://coloradobeer.org/"><img src="images/cbg.png" /></a><br />
-			<a href="http://imbibedenver.com"><img src="images/imbibe.png" /></a>
-		</div>
 
 		<div id="events">
 			<div class="event">
@@ -31,7 +31,8 @@
 				Collaboration Fest<br />
 				March 22, 2014 3-7PM<br />
 				The Curtis Hotel<br />
-				Denver
+				Denver<br />
+				<span class="buy-now-text on-sale"><a href="http://imbibedenver.com/collab">Buy Tickets Now</a></span>
 			</div>
 
 			<div class="event">
@@ -39,22 +40,30 @@
 				Sesh Fest<br />
 				Summer 2014<br />
 				Sculpture Park<br />
-				Denver
+				Denver<br />
+				<span class="buy-now-text">Buy Tickets Now</span>
 			</div>
 
 			<div class="event">
 				<div class="buy"><img src="images/Buy-Tix.png" /></div>
 				Brewery 5k<br />
 				Summer, 2014<br />
-				Fort Collins
+				Fort Collins<br />
+				<span class="buy-now-text">Buy Tickets Now</span>
 			</div>
 
 			<div class="event">
 				<div class="buy"><img src="images/Buy-Tix.png" /></div>
 				Fresh Hop Festival<br />
 				September 27, 2014<br />
-				Denver
+				Denver<br />
+				<span class="buy-now-text">Buy Tickets Now</span>
 			</div>
+		</div>
+
+		<div id="logos">
+			<a href="http://coloradobeer.org/"><img src="images/cbg.png" /></a>
+			<a href="http://imbibedenver.com"><img src="images/imbibe.png" /></a>
 		</div>
 	</div>
 

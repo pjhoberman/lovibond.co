@@ -10,6 +10,10 @@
 
 }
 
+html {font-size: 62.5%;}
+
+img { max-width: 100%;}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -25,40 +29,47 @@ header {
 }
 
 #schedule {
-	width: 1145px;
+	width: 90%;
 	margin: 45px auto 0;
+	position: relative;
 }
 
 #logos {
-	width: 275px;
-	float: left;
+	width: 25%;
+	float: right;
 	height: 300px;
+	text-align: center;
 }
 
 #logos a {
 	display: block;
 	float: left;
-	margin-bottom: 15px;
+	width: 100%;
+	margin: 0 auto 15px;
+	text-align: center;
 }
 
 #events {
 	font-family: "lhf_country_road_regularRg";
-
+	width: 75%;
+	/*min-width: 856px;*/
+	float: right;
 }
 
 .event {
-	width: 388px;
+	width: 50%;
 	height: 150px;
 	/*border: 1px solid black;*/
 	float: left;
-	margin-right: 40px;
-	font-size: 24px;
+	/*margin-right: 40px;*/
+	font-size: 2.4rem;
+	white-space:nowrap;
 }
 
 .event .buy {
 	float: left;
 	width: 100px;
-	margin: 0 15px 75px 0;
+	margin: 0 15px 80px 0;
 }
 
 .event .buy img {
@@ -67,4 +78,116 @@ header {
 
 .event .buy.on-sale img{
 	display: inline;
+}
+.buy-now-text {display: none;}
+
+
+/* responsive time */
+
+/*320-479*/
+@media screen and (min-width: 320px) {
+	body {
+		background-image: url('images/bg-320.jpg');
+		min-height: 315px;
+	}
+	header {
+		background-image: url('images/header-320.png');
+		height: 100px;
+	}
+	#events {
+		float: none;
+		margin: 0 auto;
+	}
+	.event {float: none;}
+	#logos {
+		float: none;
+		clear: both;
+		width: auto;
+	}
+	#logos a {
+		display: inline-block;
+		float: none;
+		width: auto;
+		margin: 0 50px;
+	}
+	.buy {display: none;}
+	.buy-now-text.on-sale {display: inline;}
+}
+
+/*480-599*/
+@media screen and (min-width: 480px) {
+	body {
+		background-image: url('images/bg-480.jpg');
+		min-height: 394px;
+	}
+	header {
+		background-image: url('images/header-480.png');
+		height: 130px;
+	}
+}
+
+/*600-767*/
+@media screen and (min-width: 600px) {
+	body {
+		background-image: url('images/bg-600.jpg');
+		min-height: 504px;
+	}
+	header {
+		background-image: url('images/header-600.png');
+		height: 180px;
+	}
+	.event {float: left;}
+	.buy {display: block;}
+	.buy-now-text, .buy-now-text.on-sale {display: none;}
+}
+
+/*768-899*/
+@media screen and (min-width: 768px) {
+	body {
+		background-image: url('images/bg-768.jpg');
+		min-height: 591px;
+	}
+	header {
+		background-image: url('images/header-768.png');
+		height: 210px;
+	}
+}
+
+/*900-1199px*/
+@media screen and (min-width: 900px) {
+	body {
+		background-image: url('images/bg-900.jpg');
+		min-height: 789px;
+	}
+	header {
+		background-image: url('images/header-900.png');
+		height: 280px;
+	}
+	#events {
+		float: right;
+		margin: none;
+	}
+	#logos {
+		float: right;
+		clear: none;
+		width: 25%;
+	}
+	#logos a {
+		display: block;
+		float: left;
+		width: 100%;
+		margin: 0 auto 15px;
+	}
+}
+
+/* Full width - 1200+ */
+@media screen and (min-width: 1200px) {
+	body {
+		background-image: url('images/bg.jpg');
+		min-height: 842px;
+	}
+	header {
+		background-image: url('images/header.png');
+		height: 298px;
+	}
 }
