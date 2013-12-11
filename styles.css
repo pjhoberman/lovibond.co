@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'lhf_country_road_regularRg';
+    src: url('fonts/lhfcountryroadregular-webfont.eot');
+    src: url('fonts/lhfcountryroadregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lhfcountryroadregular-webfont.woff') format('woff'),
+         url('fonts/lhfcountryroadregular-webfont.ttf') format('truetype'),
+         url('fonts/lhfcountryroadregular-webfont.svg#lhf_country_road_regularRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #8C9E92 url('images/bg.jpg') center top no-repeat;
+	min-height: 842px;
+}
+
+header {
+	background: transparent url('images/header.png') center center no-repeat;
+	width: 100%;
+	height: 298px;
+	margin-top: 15px;
+}
+
+#schedule {
+	width: 1145px;
+	margin: 45px auto 0;
+}
+
+#logos {
+	width: 275px;
+	float: left;
+	height: 300px;
+}
+
+#logos a {
+	display: block;
+	float: left;
+	margin-bottom: 15px;
+}
+
+#events {
+	font-family: "lhf_country_road_regularRg";
+
+}
+
+.event {
+	width: 388px;
+	height: 150px;
+	/*border: 1px solid black;*/
+	float: left;
+	margin-right: 40px;
+	font-size: 24px;
+}
+
+.event .buy {
+	float: left;
+	width: 100px;
+	margin: 0 15px 75px 0;
+}
+
+.event .buy img {
+	display: none;
+}
+
+.event .buy.on-sale img{
+	display: inline;
+}
